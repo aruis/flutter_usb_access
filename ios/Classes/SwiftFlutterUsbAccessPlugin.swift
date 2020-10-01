@@ -3,7 +3,7 @@ import UIKit
 
 public class SwiftFlutterUsbAccessPlugin: NSObject, FlutterPlugin {
   public static func register(with registrar: FlutterPluginRegistrar) {
-    let channel = FlutterMethodChannel(name: "flutter_usb_access", binaryMessenger: registrar.messenger())
+    let channel = FlutterMethodChannel(name: "com.aruistar.flutter_usb_access", binaryMessenger: registrar.messenger())
     let instance = SwiftFlutterUsbAccessPlugin()
     registrar.addMethodCallDelegate(instance, channel: channel)
   }
